@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+  color: #000000;
+}
+
+.postcard a, .postcard a:hover, .postcard a:active, .postcard a:visited, .postcard a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  color: #000000;
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 50px;
+}
+
+.releases li {
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+.album-art {
+  display: block;
+  max-width: 100%;
+}
+
+.album-info {
+  display: block;
+  margin: 12.5px 0;
+}
+
+.container.postcard {
+  background-image: url('../images/suitwithers2.jpg');
+  background-position: top center;
+  color: #ffffff;
+  height: 650px;
+  max-width: 100%;
+}
+
+.postcard.green {
+  background-image: url('../images/park1.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+nav li {
+  margin-bottom: 12.5px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#about {
+  margin-top: 500px;
+}
+
+.statement {
+}
+
