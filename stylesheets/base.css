@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -9,7 +10,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   letter-spacing: .5px;
-  line-height: 25px;
+  line-height: 1.5;
 }
 
 ul, ol {
@@ -26,29 +27,56 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-header {
-  margin-bottom: 50px;
-}
-
 a, a:hover, a:active, a:visited, a:focus {
   color: #000000;
-}
-
-.postcard a, .postcard a:hover, .postcard a:active, .postcard a:visited, .postcard a:focus {
-  color: #ffffff;
   text-decoration: none;
 }
 
 .container {
-  color: #000000;
+  padding: 40px;
+  max-width: 800px;
   margin: 0 auto;
-  max-width: 920px;
-  padding: 50px;
 }
 
-.releases li {
-  margin-bottom: 50px;
-  max-width: 400px;
+.site-header,
+.main {
+  margin-top: 40px;
+}
+
+.section-header {
+  margin: 40px 0;
+}
+
+.site-nav {
+  margin-top: 10px;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-nav li:last-child {
+  margin-right: 0;
+}
+
+.site-nav a {
+  font-style: italic;
+  font-weight: 700;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.recording-list li {
+  margin: 40px 0;
+}
+
+.show-list {
+  margin: 20px 0;
+}
+
+.show-list a:hover {
+  text-decoration: underline;
 }
 
 .album-art {
@@ -57,41 +85,32 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .album-info {
-  display: block;
-  margin: 12.5px 0;
+  margin-top: 10px;
 }
 
-.container.postcard {
-  background-image: url('../images/suitwithers2.jpg');
-  background-position: top center;
-  color: #ffffff;
-  height: 650px;
+.album-details,
+.album-link {
+  display: block;
+  font-style: italic;
+}
+
+.album-link {
+  text-decoration: underline;
+}
+
+.homepage-image {
   max-width: 100%;
 }
 
-.postcard.green {
-  background-image: url('../images/park1.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: auto;
-}
+@media (min-width: 600px) {
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-nav li {
-  margin-bottom: 12.5px;
-}
-
-nav a {
-  color: #ffffff;
-  font-size: 1.2em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-#about {
-  margin-top: 500px;
-}
-
-.statement {
+  .site-nav {
+    margin-top: 0;
+  }
 }
 
