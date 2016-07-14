@@ -43,6 +43,10 @@ a, a:hover, a:active, a:visited, a:focus {
   margin-top: 40px;
 }
 
+.main.homepage {
+  margin-top: 0;
+}
+
 .section-header {
   margin: 40px 0;
 }
@@ -64,6 +68,26 @@ a, a:hover, a:active, a:visited, a:focus {
   font-style: italic;
   font-weight: 700;
   margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.site-nav.homepage {
+  text-align: center;
+}
+
+.site-nav.homepage li {
+  margin: 0 10px;
+}
+
+.site-nav.homepage li:last-child {
+  margin: 0 10px;
+}
+
+.site-nav.homepage a {
+  font-style: normal;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -99,7 +123,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .homepage-image {
-  max-width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
