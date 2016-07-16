@@ -106,6 +106,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .album-art {
   display: block;
+  width: 400px;
   max-width: 100%;
 }
 
