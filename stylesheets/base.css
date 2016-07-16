@@ -100,6 +100,10 @@ a, a:hover, a:active, a:visited, a:focus {
   margin: 20px 0;
 }
 
+.show-list li {
+  margin: 10px 0;
+}
+
 .show-list a:hover {
   text-decoration: underline;
 }
