@@ -76,6 +76,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .site-nav.homepage li {
+  display: block;
   margin: 0 10px;
 }
 
