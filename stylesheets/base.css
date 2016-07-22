@@ -34,8 +34,12 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .container {
   padding: 40px;
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.container.homepage {
+  position: relative;
 }
 
 .site-header,
@@ -44,52 +48,34 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .main.homepage {
-  margin-top: 0;
+  padding: 0 150px;
 }
 
 .section-header {
   margin: 40px 0;
 }
 
-.site-nav {
-  margin-top: 10px;
-}
-
 .site-nav li {
   display: inline-block;
-  margin-right: 10px;
+  margin: 10px 0;
 }
 
-.site-nav li:last-child {
-  margin-right: 0;
+.homepage .site-nav li {
+  display: block;
 }
 
 .site-nav a {
-  font-style: italic;
-  font-weight: 700;
-  margin-right: 10px;
-  text-transform: uppercase;
-}
-
-.site-nav.homepage {
-  text-align: center;
-}
-
-.site-nav.homepage li {
-  display: block;
-  margin: 0 10px;
-}
-
-.site-nav.homepage li:last-child {
-  margin: 0 10px;
-}
-
-.site-nav.homepage a {
+  border: 1px solid #000000;
   font-style: normal;
   font-size: 1.3em;
   font-weight: 700;
-  margin: 0;
+  padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.homepage .site-nav {
+  position: absolute;
+  top: 100px;
 }
 
 .recording-list li {
@@ -141,6 +127,17 @@ a, a:hover, a:active, a:visited, a:focus {
 
   .site-nav {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .homepage .site-nav{
+    position: static;
+  }
+
+  .main.homepage {
+    margin-bottom: 40px;
+    padding: 0;
   }
 }
 
