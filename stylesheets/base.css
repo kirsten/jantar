@@ -1,3 +1,8 @@
+/*
+background-color: #2be676;
+color: #1346e6;
+*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,6 +16,10 @@ body {
   font-size: 16px;
   letter-spacing: .5px;
   line-height: 1.5;
+}
+
+body.homepage {
+  background-color: #2be676;
 }
 
 ul, ol {
@@ -38,7 +47,7 @@ a, a:hover, a:active, a:visited, a:focus {
   margin: 0 auto;
 }
 
-.container.homepage {
+.homepage .container {
   position: relative;
 }
 
@@ -47,7 +56,7 @@ a, a:hover, a:active, a:visited, a:focus {
   margin-top: 40px;
 }
 
-.main.homepage {
+.homepage .main {
   padding: 0 150px;
 }
 
@@ -71,6 +80,11 @@ a, a:hover, a:active, a:visited, a:focus {
   font-weight: 700;
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.homepage .site-nav a {
+  border: 1px solid #1346e6;
+  color: #1346e6;
 }
 
 .homepage .site-nav {
@@ -135,7 +149,7 @@ a, a:hover, a:active, a:visited, a:focus {
     position: static;
   }
 
-  .main.homepage {
+  .homepage .main {
     margin-bottom: 40px;
     padding: 0;
   }
