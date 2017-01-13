@@ -85,6 +85,14 @@ a, a:hover, a:active, a:visited, a:focus {
 .homepage .site-nav a {
   border: 1px solid #1346e6;
   color: #1346e6;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+}
+
+.homepage .site-nav a:hover {
+  border: 1px solid #1346e6;
+  background-color: #1346e6;
+  color: #2be676;
 }
 
 .homepage .site-nav {
@@ -109,7 +117,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .album-art {
-  display: block;
+  display: inline-block;
   width: 400px;
   max-width: 100%;
 }
@@ -120,8 +128,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .album-details,
 .album-link {
-  display: block;
-  font-style: italic;
+  font-size: .8em;
 }
 
 .album-link {
