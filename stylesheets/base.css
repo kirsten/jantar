@@ -38,6 +38,12 @@ a, a:hover, a:active, a:visited, a:focus {
   text-decoration: none;
 }
 
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .container {
   padding: 40px;
   max-width: 960px;
@@ -97,10 +103,6 @@ a, a:hover, a:active, a:visited, a:focus {
   top: 100px;
 }
 
-.recording-list li {
-  margin: 40px 0;
-}
-
 .show-list {
   margin: 20px 0;
 }
@@ -117,14 +119,17 @@ a, a:hover, a:active, a:visited, a:focus {
   display: block;
 }
 
+.recording-list-item {
+  margin: 40px 0 60px;
+}
+
 .album-art {
-  display: inline-block;
-  width: 400px;
+  display: block;
   max-width: 100%;
 }
 
-.album-info {
-  margin-top: 10px;
+.album-title {
+  margin-top: 20px;
 }
 
 .album-details,
@@ -133,6 +138,18 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .album-link {
+  text-decoration: underline;
+}
+
+.track-listing {
+  margin-top: 10px;
+}
+
+.track-listing a {
+  font-weight: bold;
+}
+
+.track-listing a:hover {
   text-decoration: underline;
 }
 
@@ -158,6 +175,24 @@ a, a:hover, a:active, a:visited, a:focus {
   .show-list .date {
     display: inline-block;
     width: 120px;
+  }
+
+  .album-art,
+  .album-info {
+    float: left;
+  }
+
+  .album-art {
+    width: 360px;
+  }
+
+  .album-info {
+    margin-left: 20px;
+    width: calc(100% - 380px);
+  }
+
+  .album-title {
+    margin-top: 10px;
   }
 }
 
