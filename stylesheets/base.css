@@ -76,7 +76,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .site-nav a {
   border: 1px solid #000000;
   font-style: normal;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 700;
   padding: 5px 10px;
   text-transform: uppercase;
@@ -148,6 +148,10 @@ a, a:hover, a:active, a:visited, a:focus {
 
   .site-nav {
     margin-top: 0;
+  }
+
+  .site-nav a {
+    font-size: 1.2em;
   }
 }
 
