@@ -116,6 +116,10 @@ a, a:hover, a:active, a:visited, a:focus {
   text-decoration: underline;
 }
 
+.show-list .date {
+  display: block;
+}
+
 .album-art {
   display: inline-block;
   width: 400px;
@@ -152,6 +156,11 @@ a, a:hover, a:active, a:visited, a:focus {
 
   .site-nav a {
     font-size: 1.2em;
+  }
+
+  .show-list .date {
+    display: inline-block;
+    width: 120px;
   }
 }
 
