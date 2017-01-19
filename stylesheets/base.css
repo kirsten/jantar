@@ -119,6 +119,10 @@ a, a:hover, a:active, a:visited, a:focus {
   display: block;
 }
 
+.show-list .show-details {
+  display: block;
+}
+
 .recording-list-item {
   margin: 40px 0 60px;
 }
@@ -190,8 +194,13 @@ a, a:hover, a:active, a:visited, a:focus {
   }
 
   .show-list .date {
-    display: inline-block;
-    width: 120px;
+    float: left;
+    width: 180px;
+  }
+
+  .show-list .show-details {
+    float: left;
+    width: calc(100% - 200px);
   }
 
   .album-art,
