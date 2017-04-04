@@ -11,6 +11,7 @@ color: #1346e6;
 
 body {
   background-color: #2be676;
+  color: #1346e6;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
@@ -34,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:hover, a:active, a:visited, a:focus {
-  color: #000000;
+  color: #1346e6;
   text-decoration: none;
 }
 
@@ -77,7 +78,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .site-nav a {
-  border: 1px solid #000000;
+  border: 1px solid #1346e6;
   font-style: normal;
   font-size: 1em;
   font-weight: 700;
@@ -86,8 +87,6 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .homepage .site-nav a {
-  border: 1px solid #1346e6;
-  color: #1346e6;
   -webkit-transition: color .3s, background-color .3s;
   transition: color .3s, background-color .3s;
 }
